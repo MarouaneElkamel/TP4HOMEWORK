@@ -1,4 +1,4 @@
-# **TP 4 E-service microservices et Docker:**
+# TP 4 E-service microservices et Docker:**
 ---
 Une fois que tous nos services seront parfaitement prêts et opérationnels sur la machine locale, nous créerons un conteneur individuel pour chaque service, comme le montre le diagramme de l'architecture microservice.  
 <br/> 
@@ -15,6 +15,18 @@ Nous utiliserons Docker pour construire une image  de chacun de nos microservice
 
 
 
-# ** Exécution du projet :**
+# Exécution du projet :
 
-- Docker compose up
+
+- Dans chaque service 
+  mvn clean install && docker build - t {service name} .
+
+- Dans le repertoire parent
+  docker-compose up
+
+
+# capture ecran :
+
+![Second Image](/1.png?raw=true "Eureka") 
+![Third Image](/2.png?raw=true "Dockers") 
+![Fourth Image](/3.png?raw=true "logs") 
